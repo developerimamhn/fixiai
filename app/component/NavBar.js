@@ -93,11 +93,11 @@ const NavBar = () => {
       
 
     return (
-        <div className={` header ${scrolled ? "scrolled" : " "}  w-full header backgronsdvg  ${
+        <div className={` header ${scrolled ? "scrolled" : " "}  w-full header backgronsdvg px-[24px] sm:px-0 pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[44px]  ${
             isVisible ? "translate-y-0 transition-transform duration-300" : "-translate-y-full transition-transform duration-300"
         }`}>
             
-            <header className='px-[24px] sm:px-0 container mx-auto  flex  sm:justify-start  justify-between items-center py-[12px] sm:py-[14px] lg:py-[16px] relative  sm:overflow-hidden'>
+            <header className='px-[24px] container mx-auto  flex  justify-between items-center py-[10px] sm:py-[12px] lg:py-[14px] relative  sm:overflow-hidden backgroundimage  sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]'>
             <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev>
             <Link onClick={(e) => handleScrollToTop(e, "")} href='/' className='cursor-pointer flex items-center justify-start Froggo-Logo'>
                 <Image className='w-full h-[24px] sm:h-[28px] 2xl:h-[34px]' src={logo} alt=''/></Link>
@@ -118,37 +118,32 @@ const NavBar = () => {
                 </div>
                  
 
-                <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:left-0 sm:relative duration-1000 z-[999] sm:opacity-100 flex justif-start sm:justify-start items-start sm:items-center gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px] sm:bg-transparent bg-[#15161B] sm:flex-row flex-col p-[20px] sm:p-[0] sm:w-fit w-full h-screen sm:h-full pl-[24px] sm:pl-[32px] md:pl-[36px] lg:pl-[40px] xl:pl-[48px] 2xl:pl-[60px]
+                <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:left-0 sm:relative duration-1000 z-[999] sm:opacity-100 flex justif-start sm:justify-center items-start sm:items-center gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px] sm:bg-transparent bg-[#15161B] sm:flex-row flex-col p-[20px] sm:p-[0] sm:w-fit w-full h-screen sm:h-full pl-[24px] sm:pl-[32px] md:pl-[36px] lg:pl-[40px] xl:pl-[48px] 2xl:pl-[60px]
                     ${toggle ? 'left-[0]' :'left-[120%]' }
                     ${toggle ? 'opacity-100' : 'opacity-10'} 
                     `} >
-                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Support" onClick={(e) => handleScroll(e, "Support")}>
-                    Support</a>
+                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Aboutus" onClick={(e) => handleScroll(e, "Aboutus")}>
+                    About us</a>
 
-                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#About" onClick={(e) => handleScroll(e, "About")}>
-                    About </a>
+                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#OurServices" onClick={(e) => handleScroll(e, "OurServices")}>
+                    Our Services </a>
+                                        
+                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#CaseStudies" onClick={(e) => handleScroll(e, "CaseStudies")}>
+                    Case Studies</a>
 
-                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Blog" onClick={(e) => handleScroll(e, "Blog")}>
-                    Blog</a>
-                    
-                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Roadmap" onClick={(e) => handleScroll(e, "Roadmap")}>
-                    Roadmap</a>
+                    <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Industries" onClick={(e) => handleScroll(e, "Industries")}>
+                    Industries</a>
+
                     <ul className='sm:hidden flex flex-col ml-atuo gap-4'>
-                    <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] group gap-[7.50px]'>
-                    Log In
-                    </button>
-                    <button className='buttonaudit cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] group gap-[7.50px]'>
-                    Get started
+                    <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] w-[50px] md:w-[68px] lg:w-[84px] xl:w-[110px] 2xl:w-[136px] group gap-[7.50px]'>
+                    Industries
                     </button>
                     </ul>
                 </nav>
                 
-                <ul className='sm:flex hidden gap-4 ml-auto '>
-                    <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] group gap-[7.50px]'>
-                    Log In
-                    </button>
-                    <button className='buttonaudit cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] group gap-[7.50px]'>
-                    Get started
+                <ul className='sm:flex hidden gap-4 '>
+                    <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] w-[50px] md:w-[68px] lg:w-[84px] xl:w-[110px] 2xl:w-[136px] group gap-[7.50px]'>
+                    Industries
                     </button>
                 </ul>
                 

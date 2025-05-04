@@ -44,12 +44,12 @@ body {
   font-style: normal;
   font-weight: 500;
 }
-@font-face {
+/* @font-face {
   font-family: "Segoe UI";
-  src: url("./font/Segoe UI Regular.ttf") format("truetype");
+  src: url("./font/InstrumentSans-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-}
+} */
 
 @font-face {
   font-family: "Segoe UI";
@@ -64,8 +64,8 @@ body {
 
 
 @font-face {
-  font-family: "Graphik LCG";
-  src: url("./font/GraphikLCG-Regular.ttf") format("truetype");
+  font-family: "Instrument Sans";
+  src: url("./font/InstrumentSans-Regular-BF645daa1019d9e.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
 }
@@ -94,12 +94,13 @@ body {
 
 
 @layer utilities{
-  .peoexgols {
-    color: #9CA3AF; /* Inactive tab color */
+  .backgroundimage {
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);
+    backdrop-filter: blur(10px);
   }
-  .peoexgols:hover {
-    color: #EAF4FE; /* Hover color */
-  }
+
   .buttonone{
     border-radius: 6px;
     background: rgba(218, 255, 228, 0.10);
@@ -253,20 +254,24 @@ body {
     
   }
   .bitstartp{
-    color: var(--bdbdbd, #BDBDBD);
-    font-family: "Graphik LCG";
+    color: #ADADAD;
+    text-align: center;
+    font-family: "Instrument Sans";
     font-style: normal;
     font-weight: 400;
-    line-height: 160%; /* 28.8px */
-    letter-spacing: -0.36px;
+    line-height: 150%; /* 30px */
   }
   .tradines{
-    color: var(--15161-b, #FDFCFF);
-    font-family: "Graphik LCG";
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-size: 61px;
     font-style: normal;
-    font-weight: 600;
-    line-height: 120%; /* 90px */
-    text-transform: capitalize;
+    font-weight: 700;
+    line-height: 120%; /* 73.2px */
+        background: linear-gradient(90deg, #FFF 0%, #DBCACA 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   .divisiolast{
     color: #F3E2FF;
@@ -772,30 +777,19 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
 }
 
 .buttonauditelt{
-  border-radius: 40px;
-  border: 1px solid var(--03-fc-9-e, #03FC9E);
-  background: rgba(3, 252, 158, 0.10);
-  color: var(--03-fc-9-e, #03FC9E);
+  border-radius: 50px;
+  background: #F94819;
+  color: #FFF;
   text-align: center;
-  font-family: "Graphik LCG";
+  font-family: "Instrument Sans";
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 24px */
-  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 120%; /* 19.2px */
   transition: 0.5s;
 }
 .buttonauditelt:hover{
-  border-radius: 40px;
-  background: var(--03-fc-9-e, #03FC9E);
-  color: var(--000000, #000);
-  text-align: center;
-  font-family: "Graphik LCG";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 24px */
-  text-transform: capitalize;
-  border: 1px solid var(--03-fc-9-e, #03FC9E);
-  transition: 0.5s;
+  background: rgba(249, 72, 25, 0.40);
 }
 
   .linersext{
@@ -1217,7 +1211,7 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
   
 
   .header.scrolled {
-    background: #15161B;
+    /* background: #15161B; */
     /* border-image-source: linear-gradient(90deg, #010214 0%, rgba(55, 57, 82, 0.6) 50.16%, #010214 100%); */
     /* border-bottom-width: 0.78px; */
     /* border-style: solid; */
@@ -1257,14 +1251,15 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
     line-height: 100%;
   }
   .Link-manu-bar{
-    color: var(--bdbdbd, #BDBDBD);
-    font-family: "Segoe UI";
+    color: #B0ADBE;
+    text-align: center;
+    font-family: "Instrument Sans";
     font-style: normal;
     font-weight: 400;
-    line-height: 120%; /* 21.6px */
+    line-height: 120%; /* 19.2px */
   }
   .Link-manu-bar{
-    @apply text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] duration-300 text-[#BDBDBD] hover:text-[#bdbdbda6]
+    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] duration-300 text-[#BDBDBD] hover:text-[#bdbdbda6]
   }
   .backgroundheader{
     background: linear-gradient(180deg, #141024 0%, #070510 50%);
