@@ -94,6 +94,14 @@ body {
 
 
 @layer utilities{
+  .bowrerss{
+    color: #ADADAD;
+    text-align: center;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 30px */
+  }
   .trustesss{
     color: #FFF;
     text-align: center;
@@ -272,7 +280,6 @@ body {
   .tradines{
     text-align: center;
     font-family: "Instrument Sans";
-    font-size: 61px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 73.2px */
