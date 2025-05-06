@@ -91,9 +91,12 @@ const HeroPage = () => {
                     <h2 className='tradines pt-2 sm:pt-0 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px]  text-center px-[20%]'>Pioneering Intelligence Shaping the Future with Vision</h2>
                     <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-center'>Al consulting redefined with best visionary intelligence. We craft
                     tailored solutions to <br className='lg:block hidden'/> supercharge your digital transformation.</p>
+
+                    <div className='flex items-center justify-center'>
                     <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center py-[9px] sm:py-[10px] md:py-[11px] lg:py-[12px] xl:py-[13px] 2xl:py-[14px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] group gap-[7.50px]'>
                     Free Consultation
                     </button>
+                    </div>
                   </div>
                   <div className='relative'>
                   </div>
