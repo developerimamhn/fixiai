@@ -18,9 +18,9 @@ const Body = () => {
             <Pagethree/>
             <Pagefore/>
             <Pagefive/>
-            <Pageeight/>
+            {/* <Pageeight/>
             <Pagesix/>
-            <Pageseven/>
+            <Pageseven/> */}
             <Footer/>
         </div>
     );

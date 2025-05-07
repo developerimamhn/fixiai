@@ -3,34 +3,12 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Image from 'next/image';
-import image4 from './image/image4.png';
-import image5 from './image/image5.png'; // Adjust path as needed
-import image7 from './image/image7.png';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 gsap.registerPlugin(ScrollTrigger);
 
-// Sample card data (replace with actual data)
-const cardData = [
-  {
-    id: 1,
-    imageSrc: image4,
-    title: 'Ease of Trading',
-    listItems: ['Intuitive interface', 'Seamless navigation', 'Quick transactions'],
-  },
-  {
-    id: 2,
-    imageSrc: image5, // Replace with different image if needed
-    title: 'Institutional-grade Security',
-    listItems: ['95% of assets stored safely offline', 'Highly encrypted personal data', 'Whitelisting and transaction confirmations'],
-  },
-  {
-    id: 3,
-    imageSrc: image7, // Replace with different image if needed
-    title: 'Proven Reliability',
-    listItems: ['Serving customers since 2011', 'Live customer support', 'Industry-leading uptime'],
-  },
-];
+;
 
 const Pageone = () => {
   const wrapperRef = useRef(null); // Outer container
@@ -146,43 +124,85 @@ const Pageone = () => {
     return () => ctx.revert(); // Cleanup
   }, []);
 
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.3 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
+  const numberVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: (custom) => ({
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, ease: 'easeOut' },
+    }),
+  };
+
+  const countVariants = {
+    hidden: { value: 0 },
+    visible: (custom) => ({
+      value: custom,
+      transition: { duration: 2, ease: 'easeOut' },
+    }),
+  };
+
+  const stats = [
+    { value: 1, suffix: 'M+', label: 'Satisfied users of our front-end solutions' },
+    { value: 80, suffix: '%', label: 'Clients reporting improved UX with our designs' },
+    { value: 4.9, suffix: '/5', label: 'Average client rating for our services' },
+    { value: 99, suffix: '%', label: 'Projects delivered on time and within budget' },
+  ];
+
   return (
-    <div
-      id="Blog"
-      ref={wrapperRef}
-      className="relative overflow-hidden py-[80px] sm:py-[60px] md:py-[70px] lg:py-[90px] xl:py-[120px] 2xl:py-[150px]"
-    >
+    <div id="Blog" ref={wrapperRef} className="relative overflow-hidden py-[80px] sm:py-[60px] md:py-[70px] lg:py-[90px] xl:py-[120px] 2xl:py-[150px]" >
       <div className="relative">
         <div className="container mx-auto px-6 sm:px-0">
-          <div className="grid grid-cols-12 gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[31px]">
-            {cardData.map((card, index) => (
-              <div
-                key={card.id}
-                ref={(el) => setCardRef(el, index)}
-                className="borindsas bg-transparent sm:hover:border-none sm:hover:bg-[#212227] duration-300 cursor-pointer p-[32px] sm:p-[36px] md:p-[40px] lg:p-[48px] xl:p-[64px] 2xl:p-[84px] col-span-12 sm:col-span-4 flex items-center justify-center flex-col"
-              >
-                <Image
-                  src={card.imageSrc}
-                  className="h-[32px] sm:h-[36px] md:h-[40px] lg:h-[48px] xl:h-[64px] 2xl:h-[100px] w-fit relative z-40"
-                  alt={`${card.title} icon`}
-                  width={128} // Max width for optimization
-                  height={128} // Adjust based on image aspect ratio
-                />
-                <div className="eastrasin text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[23px] pt-[16px] sm:pt-[20px] md:pt-[24px] lg:pt-[32px] xl:pt-[36px] 2xl:pt-[40px] text-center">
-                  {card.title}
-                </div>
-                <ul className="flex flex-col items-center justify-center gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px] pt-[16px] sm:pt-[20px] md:pt-[24px] lg:pt-[32px] xl:pt-[36px] 2xl:pt-[40px]">
-                  {card.listItems.map((item, idx) => (
-                    <li
-                      key={idx}
-                      className="inturiss text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] text-center"
-                    >
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+          <div className="grid grid-cols-6 sm:grid-cols-12 gap-[36px] sm:gap-[40px] md:gap-[48px] lg:gap-[64px] xl:gap-[96px] 2xl:gap-[128px]">
+            <div className='col-span-6'>
+              <div className='flex items-start flex-col justify-start'>
+                <h2 className='tradines text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] !text-start xl:pr-[10%] 2xl:pr-[20%]'>Empowering Businesses and Individuals with AI Growth</h2>
+                <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-start xl:pr-[20%] 2xl:pr-[30%]'>We help businesses and individuals leverage AI to drive growth, enhance efficiency, and foster innovation.</p>
+                  <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center py-[9px] sm:py-[10px] md:py-[11px] lg:py-[12px] xl:py-[13px] 2xl:py-[14px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] group gap-[7.50px] mt-[14px] sm:mt-[15px] md:mt-[16px] lg:mt-[20px] xl:mt-[24px] 2xl:mt-[32px] '>
+                  Our Testimonial
+                  </button>
               </div>
-            ))}
+            </div>
+            <div className='col-span-6'>
+              <div className="grid grid-cols-2 gap-[32px] sm:gap-[36px] md:gap-[40px] lg:gap-[48px] xl:gap-[64px] 2xl:gap-[96px]" ref={ref}>
+                {stats.map((stat, index) => (
+                  <motion.div
+                    key={index}
+                    variants={numberVariants}
+                    initial="hidden"
+                    animate={controls}
+                    custom={index}
+                  >
+                    <motion.h2
+                      className="tradines text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[50px] font-bold !text-start border-l-[2px] border-[#F94819] pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px]"
+                      custom={stat.value}
+                      variants={countVariants}
+                      initial="hidden"
+                      animate={controls}
+                    >
+                      <motion.span>
+                        {stat.value % 1 === 0
+                          ? stat.value.toLocaleString()
+                          : stat.value.toFixed(1)}
+                      </motion.span>
+                      {stat.suffix}
+                    </motion.h2>
+                    <p className="bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] font-normal pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-start border-l-[2px] border-transparent pl-[12px] sm:pl-[13px] md:pl-[14px] lg:pl-[15px] xl:pl-[16px] 2xl:pl-[20px]">
+                      {stat.label}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

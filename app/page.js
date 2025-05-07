@@ -9,7 +9,7 @@ export default function Home() {
       <LenisProvider>
       <Header />
       <Body />
-    </LenisProvider>
+      </LenisProvider>
     </>
   );
 }
