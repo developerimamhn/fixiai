@@ -94,6 +94,17 @@ body {
 
 
 @layer utilities{
+  .pioneersai{
+    background: linear-gradient(90deg, #FFF 23.45%, #ADACAC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Instrument Sans";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 57.6px */
+  }
   .bowrerss{
     color: #ADADAD;
     text-align: center;

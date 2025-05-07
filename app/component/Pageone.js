@@ -192,8 +192,8 @@ const Pageone = () => {
     return (
         <div  id='About'  className='relative'>
             <div   className='w-full'>
-              <div className='w-full'>
-              <div className='flex items-center py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[23px]'>
+              <div className='w-full container mx-auto'>
+              <div className='flex items-center py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[22px]'>
                 
                 <div className="w-full h-full overflow-hidden relative">
                   <div className='lineronesssss h-full absolute left-0 top-0 w-[60px] sm:w-[100px] z-[50]'></div>
