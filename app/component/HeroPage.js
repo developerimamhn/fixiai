@@ -87,12 +87,12 @@ const HeroPage = () => {
         <div id="hero" ref={buttonRef} className='relative'>
           <div className='relative z-[2] overflow-hidden'>
               <div className='w-1/6 h-1/6 absolute right-[20%] top-1/2 -translate-y-1/2 -z-10 sm:block hidden rounded-[388px] opacity-[0.76] bg-[#03FC9E] blur-[200px]'></div>
-              <div className='pt-[80px] sm:pt-[81px] md:pt-[100px] lg:pt-[150px] xl:pt-[200px] 2xl:pt-[250px] sm:pb-0 pb-[50px] container mx-auto px-[24px] sm:px-0 w-full flex felx-center justify-center'>
+              <div className='pt-[80px] sm:pt-[81px] md:pt-[150px] xl:pt-[200px] 2xl:pt-[250px] sm:pb-0 pb-[50px] container mx-auto px-[24px] sm:px-0 w-full flex felx-center justify-center'>
                 <div  className='grid grid-cols-1 items-center'>
                   <div className='flex items-center flex-col justify-center'>
-                    <h2 className='tradines pt-2 sm:pt-0 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px]  text-center lg:px-[20%]'>Pioneering Intelligence Shaping the Future with Vision</h2>
+                    <h2 className='tradines pt-2 sm:pt-0 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px]  text-center md:px-[15%] lg:px-[20%]'>Pioneering Intelligence Shaping the Future with Vision</h2>
                     <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-center'>Al consulting redefined with best visionary intelligence. We craft
-                    tailored solutions to <br className='lg:block hidden'/> supercharge your digital transformation.</p>
+                    tailored solutions to <br className='md:block hidden'/> supercharge your digital transformation.</p>
                     <div className='sm:flex-row flex-col flex items-center justify-center pt-[14px] sm:pt-[15px] md:pt-[16px] lg:pt-[20px] xl:pt-[24px] 2xl:pt-[32px] gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px]'>
                       <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center py-[9px] sm:py-[10px] md:py-[11px] lg:py-[12px] xl:py-[13px] 2xl:py-[14px] px-[13px] sm:px-[14px] md:px-[15px] lg:px-[16px] xl:px-[20px] 2xl:px-[24px] group gap-[7.50px]'>
                       Free Consultation

@@ -190,10 +190,10 @@ const Pagetwo = () => {
 
     
     return (
-        <div id='About' ref={wrapperRef} className='pt-[60px] md:pt-[70px] lg:pt-[90px] xl:pt-[110px] 2xl:pt-[140px] px-6 sm:px-0 pb-[60px] sm:pb-[80px] md:pb-[100px] lg:pb-[130px] xl:pb-[160px] 2xl:pb-[190px]'>
+        <div id='About'  className='pt-[60px] md:pt-[70px] lg:pt-[90px] xl:pt-[110px] 2xl:pt-[140px] px-6 sm:px-0 pb-[60px] sm:pb-[80px] md:pb-[100px] lg:pb-[130px] xl:pb-[160px] 2xl:pb-[190px]'>
            <div className='container mx-auto'>
               <h2 className='piconsaisasz text-[20px] sm:text-[24px] md:text-[32px] lg:text-[36px] xl:text-[40px] 2xl:text-[48px] pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[64px]'>Pioneering AI consulting to drive innovation, <br className='lg:block hidden'/> efficiency, and growth for businesses.</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[32px]">
+              <div ref={wrapperRef} className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-[32px]">
   {items.map((item) => (
     <div key={item.id} className="">
       <div className="poicsebsa !rounded-[20px] ">

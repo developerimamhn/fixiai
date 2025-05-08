@@ -102,7 +102,8 @@ const Pagethree = () => {
           <div className='w-1/3 absolute right-0 top-1/2 transform -translate-x-1/2 -translate-y-1/2 goadsgvedfevg h-1/3 -z-[1]'></div>
             <div  className='relative container mx-auto '>
                 <div className="grid grid-cols-12 justify-between gap-4 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 px-4 sm:px-6 lg:px-8">
-                  <div  className="col-span-12 sm:col-span-6 relative h-fit">
+                  <div  className="col-span-12 sm:col-span-6 relative h-fit ">
+                    <div className='h-full w-[32px] sm:w-[36px] md:w-[40px] lg:w-[48px] xl:w-[64px] 2xl:w-[90px] sm;rounded-auto !rounded-none  greaidawsbadk z-50'></div>
                   <Swiper
                   slidesPerView={1.2}
                   spaceBetween={30}

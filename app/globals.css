@@ -94,6 +94,13 @@ body {
 
 
 @layer utilities{
+  .greaidawsbadk{
+    background: linear-gradient(270deg, #5E2019 0%, rgba(94, 32, 25, 0.00) 100%);
+     position: absolute;
+     right: 0px;
+     top: 0px;
+     border-radius: 23px 24px 20px 20px;
+  }
   .goadsgvedfevg{
     border-radius: 654.181px;
 background: #FF6035;

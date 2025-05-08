@@ -234,27 +234,27 @@ const Footer = () => {
                         <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-start'>
                           <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Company</a>
                             <ul className='flex justify-start flex-col gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>About us</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Career</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Contact</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Privacy Policy</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Terms & Conditions</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>About us</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Career</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Contact</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Privacy Policy</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Terms & Conditions</a>
                             </ul>
                         </div> 
                         <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-start'>
                           <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Resources</a>
                             <ul className='flex justify-start flex-col gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Blog & Insight </a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Case Studies</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Tutorials</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Blog & Insight </a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Case Studies</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Tutorials</a>
                             </ul>
                         </div> 
                         <div className='flex items-start flex-col gap-[14px] sm:gap-[15px] md:gap-[16px] lg:gap-[20px] xl:gap-[24px] 2xl:gap-[30px] justify-start'>
                           <a className='privacypolicy text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] !text-[#FDFCFF] '>Generals</a>
                             <ul className='flex justify-start flex-col gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px] footeritesm figtree text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]'>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Homepage</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Testimonials</a>
-                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#03FC9E] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Category</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Homepage</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Testimonials</a>
+                              <a className='privacypolicy duration-300 text-[#9226E0] hover:text-[#FA4C1D] text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] cursor-pointer'>Category</a>
                             </ul>
                         </div> 
                       </div>
