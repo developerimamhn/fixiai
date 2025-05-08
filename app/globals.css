@@ -877,7 +877,6 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
   color: #FFF;
   text-align: center;
   font-family: "Instrument Sans";
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 120%; /* 19.2px */
@@ -1354,7 +1353,7 @@ background: linear-gradient(180deg, #010214 0%, #010214 16.55%, #4E27BC 63.32%, 
     line-height: 120%; /* 19.2px */
   }
   .Link-manu-bar{
-    @apply text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] duration-300 text-[#BDBDBD] hover:text-[#bdbdbda6]
+    @apply text-[14px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] duration-300 text-[#BDBDBD] hover:text-[#bdbdbda6]
   }
   .backgroundheader{
     background: linear-gradient(180deg, #141024 0%, #070510 50%);

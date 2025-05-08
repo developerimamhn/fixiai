@@ -93,13 +93,13 @@ const NavBar = () => {
       
 
     return (
-        <div className={` header ${scrolled ? "scrolled" : " "}  w-full header backgronsdvg  pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[44px]  ${
-            isVisible ? "translate-y-0 transition-transform duration-300" : "-translate-y-full transition-transform duration-300"
+        <div className={` header ${scrolled ? "scrolled" : " "} z-[150] w-full header backgronsdvg  pt-[20px] sm:pt-[24px] md:pt-[32px] lg:pt-[36px] xl:pt-[40px] 2xl:pt-[44px]  ${
+            isVisible ? "translate-y-0 transition-transform duration-300" : "-translate-y-full transition-transform duration-300 "
         }`}>
             
-            <header className='px-[24px] container mx-auto  flex  justify-between items-center py-[10px] sm:py-[12px] lg:py-[14px] relative  sm:overflow-hidden backgroundimage  sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px]'>
+            <header className='px-[24px] container mx-auto  flex  justify-between items-center py-[10px] sm:py-[12px] lg:py-[14px] relative  sm:overflow-hidden backgroundimage  sm:px-[13px] md:px-[14px] lg:px-[15px] xl:px-[16px] 2xl:px-[20px] '>
             <dev className='linersext absolute bottom-0 left-0 w-full h-[2px] z-10'></dev>
-            <Link onClick={(e) => handleScrollToTop(e, "")} href='/' className='cursor-pointer flex items-center justify-start Froggo-Logo'>
+            <Link onClick={(e) => handleScrollToTop(e, "")} href='/' className='cursor-pointer relative flex  items-center justify-start Froggo-Logo'>
                 <Image className='w-full h-[24px] sm:h-[28px] 2xl:h-[34px]' src={logo} alt=''/></Link>
                 <div className='sm:hidden relative top-[-11px] -left-6'>
                     
@@ -118,8 +118,8 @@ const NavBar = () => {
                 </div>
                  
 
-                <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:left-0 sm:relative duration-1000 z-[999] sm:opacity-100 flex justif-start sm:justify-center items-start sm:items-center gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px] sm:blur-none blur-[200] sm:bg-transparent bg-[#15161B] sm:flex-row flex-col p-[20px] sm:p-[0] sm:w-fit w-full h-screen sm:h-full pl-[24px] sm:pl-[32px] md:pl-[36px] lg:pl-[40px] xl:pl-[48px] 2xl:pl-[60px]
-                    ${toggle ? 'left-[0]' :'left-[120%]' }
+                <nav ref={menuRef} className={`navbar-items-main absolute  sm:left-0 sm:relative duration-1000 z-[99] sm:opacity-100 flex justif-start sm:justify-center items-start sm:items-center gap-[16px] sm:gap-[20px] md:gap-[24px] lg:gap-[32px] xl:gap-[36px] 2xl:gap-[40px] sm:blur-none blur-[200] sm:bg-transparent bg-[#15161B] right-0 sm:flex-row flex-col p-[20px] sm:p-[0] sm:w-fit w-full  sm:h-full pl-[24px] sm:pl-[32px] md:pl-[36px] lg:pl-[40px] xl:pl-[48px] 2xl:pl-[60px]
+                    ${toggle ? 'top-[47px] h-screen' :'-top-[500%]' }
                     ${toggle ? 'opacity-100' : 'opacity-10'} 
                     `} >
                     <a className="cursor-pointer Link-manu-bar flex items-center gap-[6px] lg:gap-[8px]" href="#Aboutus" onClick={(e) => handleScroll(e, "Aboutus")}>
@@ -135,14 +135,14 @@ const NavBar = () => {
                     Industries</a>
 
                     <ul className='sm:hidden flex flex-col  gap-4'>
-                    <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] '>
+                    <button className='buttonauditelt cursor-pointer text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] flex items-center justify-center h-[30px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px] '>
                     Industries
                     </button>
                     </ul>
                 </nav>
                 
                 <ul className='sm:flex hidden gap-4 ml-atuo'>
-                <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center h-[36px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px]  group gap-[7.50px]'>
+                <button className='buttonauditelt cursor-pointer text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] flex items-center justify-center h-[30px] md:h-[40px] lg:h-[44px] xl:h-[48px] 2xl:h-[59px] px-[16px] sm:px-[20px] md:px-[24px] lg:px-[32px] xl:px-[36px] 2xl:px-[40px]  group gap-[7.50px]'>
                     Industries
                     </button>
                 </ul>

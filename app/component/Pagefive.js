@@ -97,7 +97,7 @@ const Pagefive = () => {
                 <div className='flex items-center flex-col justify-center'>
                   <h2 className='tradines pt-2 sm:pt-0 text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[61px]  text-center lg:px-[20%]'>Let&apos;s Build The
                   future Together!</h2>
-                  <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-center'>We help businesses and individuals leverage AI to drive growth, <br className='md:block hidden'/>enhance efficiency, and foster innovation.</p>
+                  <p className='bitstartp text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pt-[12px] sm:pt-[13px] md:pt-[14px] lg:pt-[15px] xl:pt-[16px] 2xl:pt-[20px] !text-center px-[10%] sm:px-0'>We help businesses and individuals leverage AI to drive growth, <br className='md:block hidden'/>enhance efficiency, and foster innovation.</p>
                   <div className='sm:flex-row flex-col flex items-center justify-center pt-[14px] sm:pt-[15px] md:pt-[16px] lg:pt-[20px] xl:pt-[24px] 2xl:pt-[32px] gap-[12px] sm:gap-[13px] md:gap-[14px] lg:gap-[15px] xl:gap-[16px] 2xl:gap-[20px]'>
                     <button className='buttonauditelt cursor-pointer text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] flex items-center justify-center py-[9px] sm:py-[10px] md:py-[11px] lg:py-[12px] xl:py-[13px] 2xl:py-[14px] group gap-[7.50px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px] '>
                     Contact us
